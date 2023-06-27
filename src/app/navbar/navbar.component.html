@@ -1,0 +1,42 @@
+<nav class="a">  
+    <ul>
+        <div class="dropdown">
+            <button (click)="burgerMenuClick()">&#9776;</button>
+            <div class="dropdown-content"[hidden]="isburgerMenuClickopen">
+                
+                <ul class="list" >
+                <ng-container *ngIf="false;then authenticated;else notauthenticated"></ng-container>
+                    <ng-template #notauthenticated>
+                    <li><a routerLink="/login">Login</a></li>
+                <br>
+                    <li><a routerLink="/Register">Register</a></li>
+                <br>
+                    <li><a routerLink="/HowTouse">How to use?</a></li>
+
+                    </ng-template>
+                    <ng-template #authenticated>
+                    <li><a routerLink="/Create">Create</a></li>
+                <br>
+                    <li><a routerLink="/Manage">Manage</a></li>
+                <br>
+                    <li><a routerLink="/">Logout</a></li>
+                </ng-template>
+                </ul>
+            </div>
+        </div>
+            <b><a routerLink=""><ng-container *ngFor="let letter of word.split(''); let i = index">
+                <span [ngStyle]="{color: letter ==='A'? 'red':'black'}" > {{letter}}</span>
+            </ng-container></a>
+            </b>         
+    </ul>
+</nav> 
+          
+    
+        
+
+    
+        
+
+
+       
+  

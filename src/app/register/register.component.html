@@ -1,0 +1,45 @@
+
+<div class="container">
+  <h1>Create an Account</h1>
+  <br>
+  <form [formGroup]="registerForm" (ngSubmit)="login()">
+    <input class="namet" type="text" formControlName="name" placeholder="Name" >
+    <div *ngIf="registerForm.get('name').errors && registerForm.get('name').touched">
+        <div  class="error" *ngIf="registerForm.get('name').hasError('required')">Name is required.</div>
+        <div class="error" *ngIf="registerForm.get('name').hasError('minlength')">Name must be at least 3 characters long.</div>
+    </div>
+    <div >
+   <br>
+    <input class="emailt" type="email" placeholder="Email Id" id="email" formControlName="email" >
+      <div *ngIf="email.invalid && (email.dirty || email.touched)">
+        <div>
+        <div class="emerr" *ngIf="email.errors?.['required']">Email is required.</div>
+        <div class="emerr" *ngIf="email.errors?.['email']">Invalid email format.</div>
+    </div>
+      </div>
+    </div>
+    <br>
+    <div>
+      <input class="passt" type="password" placeholder= "Password" id="password" formControlName="password" />
+      <div *ngIf="password.invalid && (password.dirty || password.touched)">
+        <div class="paserr" *ngIf="password.errors?.['required']">Password is required.</div>
+        <div class="paserr" *ngIf="password.errors?.['minlength']">
+          Password must be at least 6 characters long.
+        </div>
+      </div>
+    </div>
+    <br>
+    <div>
+        <input class="passt" type="password" placeholder= "Confirm Password" id="confirmpassword" formControlName="confirmpassword" />
+        <div *ngIf="password.invalid && (password.dirty || password.touched)">
+          <div class="paserr" *ngIf="confirmpassword.errors?.['required']">Password is required.</div>
+          <div class="paserr" *ngIf="confirmpassword.errors?.['minlength']">Password must be at least 6 characters long.</div>
+          <div class="paserr" *ngIf="password.value !== confirmpassword.value">Password do not match.</div>
+        </div>
+      </div>
+
+    <br>
+    <button type="submit" [disabled]="registerForm.invalid"> Register</button>
+  </form>
+  
+</div>

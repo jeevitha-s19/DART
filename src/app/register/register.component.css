@@ -1,0 +1,67 @@
+h1{
+    padding-top: 170px;
+    margin: auto;
+    text-align: center;
+    font-size: 33px;
+}
+
+.namet{
+    background-color: black;
+    color: white;
+    margin: auto;
+    width: 30%;    
+    padding: 10px;
+    display: flex;
+    border-radius: 15px;
+}
+
+.emailt{
+    background-color: black;
+    color: white;
+    margin: auto;
+    width: 30%;    
+    padding: 10px;
+    display: flex;
+    border-radius: 15px;
+}
+
+.passt{
+    background-color: black;
+    color: white;
+    margin: auto;
+    width: 30%;    
+    padding: 10px;
+    display: flex;
+    border-radius: 15px;
+}
+
+.error{
+    color:red;
+    text-align: center;
+}
+
+.emerr{
+    color:red;
+    text-align: center;
+}
+
+.paserr{
+    color:red;
+    text-align: center;
+}
+
+button{
+    margin:auto;
+    width: 8%;    
+    padding: 8px 18px;
+    text-align: center;
+    display: flex;
+    border-radius: 15px;
+    background-color: rgb(158, 158, 255);
+    color: black;
+}
+
+p{
+    text-align: center;
+}
+

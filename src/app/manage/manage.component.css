@@ -1,0 +1,54 @@
+.search{
+  width: 350px;
+  text-align: center;
+  height: 30px;
+  margin-top: 90px;
+  margin-bottom: 40px;
+  margin-left: 350px;
+  }
+
+  .title{
+  width: 350px;
+  text-align: center;
+  height: 30px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  margin-left: 350px;
+  }
+  
+  label{
+  font-size: 30px;
+  margin-left: 105px;
+  }
+  
+  th{
+    font-size: 20px;
+  }
+  .txtbox{
+  padding-top: 10px;
+  width: 400px;
+  margin-left: 60px;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 500px 200px 200px;
+    gap: 10px;
+    background-color: rgb(163, 164, 236);
+    padding: 10px;
+    margin-left: 100px;
+    margin-top: 40px;
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 17px 0;
+    font-size: 25px;
+  }
+
+  .header{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+  }

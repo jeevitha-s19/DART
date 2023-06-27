@@ -1,0 +1,19 @@
+<form [formGroup]="okrForm" (ngSubmit)="onSubmit()" class="form-container">
+  
+    <label for="okrtitle" class="team-name"> OKR Title </label><br><br>
+        <input type="text" formControlName="okrtitle" placeholder="Title" class="tnlbl" />
+    <label for="objective" class="objective"> Objective </label><br><br>
+        <input type="text" formControlName="objective" placeholder="Write your Objective" class="objlbl" /><br>
+          
+        <div formArrayName="keyresults">
+            <label class="key-results">Key Results</label>
+                <div *ngFor="let key of keyresults.controls; let i = index">
+                    <div formGroupName="i">
+                        <input type="text" formControlName="kresult" class="tb" />
+                         <button (click)="removekr(i)" class="rm">×</button>
+                    </div>
+                </div>
+            </div><br>
+        <button type="submit" class="Submit">Submit</button>
+</form>
+    <button type="button" (click)="addkr()" class="addtb">&plus;</button>

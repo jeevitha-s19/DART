@@ -1,0 +1,55 @@
+h1{
+    padding-top: 170px;
+    margin: auto;
+    text-align: center;
+    font-size: 33px;
+}
+
+.emailt{
+    background-color: black;
+    color: white;
+    margin: auto;
+    width: 30%;    
+    padding: 10px;
+    display: flex;
+    border-radius: 15px;
+}
+
+.passt{
+    background-color: black;
+    color: white;
+    margin: auto;
+    width: 30%;    
+    padding: 10px;
+    display: flex;
+    border-radius: 15px;
+}
+
+.emerr{
+    color:red;
+    text-align: center;
+}
+
+.paserr{
+    color:red;
+    text-align: center;
+}
+
+button{
+    margin:auto;
+    width: 8%;    
+    padding: 8px 25px;
+    display: flex;
+    border-radius: 15px;
+    background-color: rgb(158, 158, 255);
+    color: black;
+}
+
+p{
+    text-align: center;
+}
+
+.bg-img{
+    background-image: url(https://images.saasworthy.com/blog_latest/wp-content/uploads/2022/01/OKR-guide.png);
+    opacity: 20px;
+}
