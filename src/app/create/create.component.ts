@@ -23,7 +23,7 @@ export class CreateComponent {
   newkeyresult(): FormGroup {
     return this.fb.group({
       kresult: '',
-      //assignee:''
+      
     })
   }
 

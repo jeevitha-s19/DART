@@ -30,25 +30,30 @@
   margin-left: 60px;
   }
   
-  .grid-container {
-    display: grid;
-    grid-template-columns: 500px 200px 200px;
-    gap: 10px;
-    background-color: rgb(163, 164, 236);
-    padding: 10px;
-    margin-left: 100px;
-    margin-top: 40px;
-  }
   
-  .grid-container > div {
-    background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    padding: 17px 0;
-    font-size: 25px;
-  }
-
   .header{
     text-align: center;
     font-size: 15px;
     font-weight: 500;
   }
+  table{
+    width: 900px;
+    display: block;
+    border-collapse: separate;
+    margin-left: 100px;
+    border-spacing: 7px;
+    margin-top: 30px;
+    background-color: rgb(163, 164, 236);
+    }
+    
+    tr{
+    width: 280px;
+    text-align: center;
+    margin-top: 30px;
+    }
+    
+    td{
+    width: 280px;
+    height: 35px;
+    background-color: white;
+    }
